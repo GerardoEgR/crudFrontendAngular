@@ -2,12 +2,12 @@
 
 Este proyecto tiene como objetivo calcular el valor de cuota de una simulación de crédito desarrollado con Angular y NestJS, donde en esta primera parte solo se encuentra el desarrollo frontend. La aplicación permite a los usuarios ingresar datos a través de un formulario en la interfaz de usuario, enviar esos datos al backend construido con NestJS, realizar un cálculo basado en los datos proporcionados y finalmente mostrar el resultado al usuario en pantalla. Además, los resultados se guardan en una base de datos creada en MySql para su posterior consulta.
 
-* En este repositorio solo se encuentra el desarrollo del frontend.
+* En este repositorio solo se encuentra el desarrollo del frontend. 
 
 ## Características principales proyecto completo
 
 * Interfaz de usuario amigable con un formulario para ingresar datos.
-* Backend robusto construido con NestJS para realizar cálculos y gestionar la persistencia de datos.
+* Backend construido con NestJS para realizar cálculos y gestionar la persistencia de datos.
 * Comunicación segura entre el frontend y el backend a través de API RESTful.
 * Almacenamiento de resultados en una base de datos para su posterior consulta y referencia.
 

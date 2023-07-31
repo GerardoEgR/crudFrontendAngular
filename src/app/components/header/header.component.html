@@ -1,0 +1,26 @@
+<div class="todo-list">
+  <h2>Ingrese los datos del crédito</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+
+    <input type="number" placeholder="RUT Ej.: 123456789" formControlName="dni">
+    <div *ngIf="dniField?.errors && dniField?.touched">
+      <p *ngIf="dniField?.hasError('required')">El campo no puede ir vacío</p>
+      <p *ngIf="dniField?.hasError('maxlength')">El Rut debe ser sin guion</p>
+    </div>
+
+    <input type="number" placeholder="Monto del Credito" formControlName="amount">
+    <div *ngIf="amountField?.errors && amountField?.touched">
+      <p *ngIf="amountField?.hasError('required')">El campo no puede ir vacío</p>
+    </div>
+
+    <input type="number" placeholder="Numero de cuotas" formControlName="installments">
+    <div *ngIf="installmentsField?.errors && installmentsField?.touched">
+      <p *ngIf="installmentsField?.hasError('required')">El campo no puede ir vacío</p>
+    </div>
+
+    <button type="submit" [disabled]="form.invalid">
+      Enviar Consulta
+    </button>
+    
+</form>
+</div>

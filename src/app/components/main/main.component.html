@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngIf="!loadingService.getStatusLoading() &&
+    loadingService.getStatusAmount() && !loadingService.getStatusValid()">
+    <p>Valor cuota</p>
+    <ul class="list-group">
+      <app-item></app-item>
+    </ul>
+  </div>
+  <div class="spinner" *ngIf="loadingService.getStatusLoading()"></div>
+  <p *ngIf="loadingService.getStatusError()">
+    Ha ocuarrido un error en el proceso!
+  </p>
+</div>

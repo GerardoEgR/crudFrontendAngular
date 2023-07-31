@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cont-body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(241, 241, 241);
+  background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(133,97,201,1) 99%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-todo-list {
+  width: 520px;
+  height: 650px;
+  background-color: rgb(42, 42, 42);
+  border-radius: 30px;
+  box-shadow: 22px 22px 42px -7px rgb(49, 49, 49);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px auto 55px;
+  row-gap: 380px;
+}
+
+.todo-list {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 10px 20px;
+}
+
+.todo-list h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.todo-list form {
+  display: contents;
+}
+
+.todo-list input {
+  border: 0;
+  outline: none;
+  background: none;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 25px 25px;
+  border: 2px solid #5731DE;
+  padding-left: 15px;
+  margin: 20px 0 0 10px;
+  color: white;
+}
+
+.todo-list p {
+  color: red;
+  font-size: 10px;
+  text-align: center;
+}
+
+.todo-list button {
+  border: none;
+  background: none;
+  outline: inherit;
+  cursor: pointer;
+  background-color: #5731DE;
+  color: white;
+  height: 36px;
+  border-radius: 20px 20px;
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+
+.todo-list button:hover {
+  background-color: rgb(133, 99, 255);
+  transition-duration: 0.5s;
+}
+
+.todo-list button:disabled {
+  background-color: rgb(133, 99, 255);
+  cursor: not-allowed;
+}
+
+.c-main {
+  height: 100%;
+  background-color: #1F1F1F;
+
+}
+
+.c-main::-webkit-scrollbar-thumb {
+  background-color: #5731DE;
+  border-radius: 5px;
+} 
+
+.c-main p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.c-main .list-group {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.c-main .list-group .list-group-item {
+  list-style: none;
+  width: 180px;
+  padding: 7px 10px;
+  color: white;
+  border: 1px solid rgb(42, 42, 42);
+  border-radius: 10px;
+  cursor: pointer;
+  border-color: rgb(131, 97, 255);
+}
+
+.c-main .list-group .list-group-item p {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.list-group-item {
+  position: relative;
+}
